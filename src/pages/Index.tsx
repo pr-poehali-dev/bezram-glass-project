@@ -75,7 +75,7 @@ const Index = () => {
   const cost = estimate();
 
   return (
-    <div className="min-h-screen overflow-x-hidden" style={{ background: "hsl(210,20%,96%)", color: "hsl(210,25%,12%)", fontFamily: "'Golos Text', sans-serif" }}>
+    <div className="min-h-screen overflow-x-hidden" style={{ background: "hsl(0,0%,93%)", color: "hsl(210,25%,12%)", fontFamily: "'Golos Text', sans-serif" }}>
 
       {/* NAV */}
       <header style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 50, transition: "all 0.3s", ...(scrolled ? { background: "rgba(240,244,248,0.97)", backdropFilter: "blur(12px)", borderBottom: "1px solid hsl(210,15%,82%)" } : {}) }}>
@@ -84,7 +84,7 @@ const Index = () => {
             <div style={{ width: 32, height: 32, border: "1px solid #8b1a2f", transform: "rotate(45deg)", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <div style={{ width: 10, height: 10, background: "#8b1a2f" }} />
             </div>
-            <span style={{ fontFamily: "'Cormorant', serif", fontSize: 20, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "#8b1a2f" }}>bezram.nn</span>
+            <span style={{ fontFamily: "'Cormorant', serif", fontSize: 30, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "#8b1a2f" }}>bezram.nn</span>
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
