@@ -4,39 +4,39 @@
 
 @layer base {
   :root {
-    --background: 210 15% 6%;
-    --foreground: 210 20% 92%;
+    --background: 210 20% 96%;
+    --foreground: 210 25% 12%;
 
-    --card: 210 15% 9%;
-    --card-foreground: 210 20% 92%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 25% 12%;
 
-    --popover: 210 15% 9%;
-    --popover-foreground: 210 20% 92%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 25% 12%;
 
-    --primary: 196 60% 58%;
-    --primary-foreground: 210 15% 6%;
+    --primary: 196 60% 40%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 15% 14%;
-    --secondary-foreground: 210 20% 85%;
+    --secondary: 210 15% 90%;
+    --secondary-foreground: 210 25% 20%;
 
-    --muted: 210 15% 12%;
-    --muted-foreground: 210 10% 55%;
+    --muted: 210 15% 92%;
+    --muted-foreground: 210 10% 45%;
 
-    --accent: 196 60% 58%;
-    --accent-foreground: 210 15% 6%;
+    --accent: 196 60% 40%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 15% 16%;
-    --input: 210 15% 14%;
-    --ring: 196 60% 58%;
+    --border: 210 15% 82%;
+    --input: 210 15% 88%;
+    --ring: 196 60% 40%;
 
     --radius: 0.25rem;
 
-    --glass-blue: #4db8d0;
-    --glass-blue-dim: rgba(77, 184, 208, 0.12);
-    --glass-blue-border: rgba(77, 184, 208, 0.25);
+    --glass-blue: #3a9ab5;
+    --glass-blue-dim: rgba(58, 154, 181, 0.1);
+    --glass-blue-border: rgba(58, 154, 181, 0.3);
   }
 }
 
@@ -52,7 +52,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Golos Text", sans-serif;
-    background-color: hsl(210, 15%, 6%);
+    background-color: hsl(210, 20%, 96%);
   }
 }
 
