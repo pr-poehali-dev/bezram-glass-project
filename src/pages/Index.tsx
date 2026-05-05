@@ -381,6 +381,7 @@ const Index = () => {
               { icon: "Phone", title: "Телефон", val: "+7 (951) 913-80-63", sub: "Пн–Пт: 9:00–19:00" },
               { icon: "MapPin", title: "Адрес", val: "Нижний Новгород, ул. Карла Маркса, 22", sub: "Открыть на картах", link: "https://yandex.ru/maps/?text=Нижний+Новгород+улица+Карла+Маркса+22" },
               { icon: "Mail", title: "E-mail", val: "rds-nn@mail.ru", sub: "Ответим за 2 часа" },
+              { icon: "Send", title: "Telegram", val: "@Ostekleniebezram", sub: "Написать в Telegram", link: "https://t.me/Ostekleniebezram" },
             ].map((c) => (
               <div key={c.title} style={{ background: "rgba(255,255,255,0.9)", border: "1px solid rgba(58,154,181,0.25)", padding: 28 }}>
                 <div style={{ width: 42, height: 42, border: "1px solid rgba(58,154,181,0.3)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
@@ -407,6 +408,16 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* TELEGRAM FLOATING BUTTON */}
+      <a href="https://t.me/Ostekleniebezram" target="_blank" rel="noopener noreferrer"
+        style={{ position: "fixed", bottom: 28, right: 28, zIndex: 99, width: 56, height: 56, borderRadius: "50%", background: "#229ED9", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 20px rgba(34,158,217,0.4)", cursor: "pointer", transition: "transform 0.2s, box-shadow 0.2s", textDecoration: "none" }}
+        onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.transform = "scale(1.1)"; (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 6px 28px rgba(34,158,217,0.55)"; }}
+        onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.transform = "scale(1)"; (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 4px 20px rgba(34,158,217,0.4)"; }}>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 6.686l-1.683 7.927c-.126.567-.459.706-.93.44l-2.56-1.887-1.235 1.188c-.137.137-.251.251-.514.251l.184-2.6 4.733-4.276c.206-.183-.045-.285-.32-.102L7.78 14.596l-2.52-.786c-.548-.171-.558-.548.114-.811l9.857-3.8c.457-.165.857.112.7.487z"/>
+        </svg>
+      </a>
 
       {/* FOOTER */}
       <footer style={{ borderTop: "1px solid hsl(210,15%,82%)", padding: "28px 24px" }}>
