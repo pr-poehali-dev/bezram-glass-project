@@ -378,9 +378,9 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5" style={{ marginBottom: 40 }}>
             {[
-              { icon: "Phone", title: "Телефон", val: "+7 (951) 913-80-63", sub: "Пн–Пт: 9:00–19:00" },
+              { icon: "Phone", title: "Телефон", val: "+7 (951) 913-80-63", sub: "Пн–Пт: 9:00–19:00", link: "tel:+79519138063" },
               { icon: "MapPin", title: "Адрес", val: "Нижний Новгород, ул. Карла Маркса, 22", sub: "Открыть на картах", link: "https://yandex.ru/maps/?text=Нижний+Новгород+улица+Карла+Маркса+22" },
-              { icon: "Mail", title: "E-mail", val: "rds-nn@mail.ru", sub: "Ответим за 2 часа" },
+              { icon: "Mail", title: "E-mail", val: "rds-nn@mail.ru", sub: "Ответим за 2 часа", link: "mailto:rds-nn@mail.ru" },
               { icon: "Send", title: "Telegram", val: "@Ostekleniebezram", sub: "Написать в Telegram", link: "https://t.me/Ostekleniebezram" },
             ].map((c) => (
               <div key={c.title} style={{ background: "rgba(255,255,255,0.9)", border: "1px solid rgba(58,154,181,0.25)", padding: 28 }}>
@@ -388,9 +388,12 @@ const Index = () => {
                   <Icon name={c.icon} fallback="Square" size={18} style={{ color: "#3a9ab5" }} />
                 </div>
                 <div style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: "hsl(210,15%,40%)", marginBottom: 8 }}>{c.title}</div>
-                <div style={{ fontWeight: 600, color: "hsl(210,25%,12%)", marginBottom: 4 }}>{c.val}</div>
                 {'link' in c
-                  ? <a href={c.link} target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, color: "#3a9ab5", textDecoration: "underline", cursor: "pointer" }}>{c.sub}</a>
+                  ? <a href={c.link} target={c.link.startsWith('tel:') || c.link.startsWith('mailto:') ? '_self' : '_blank'} rel="noopener noreferrer" style={{ fontWeight: 600, color: "hsl(210,25%,12%)", marginBottom: 4, display: "block", textDecoration: "none" }}>{c.val}</a>
+                  : <div style={{ fontWeight: 600, color: "hsl(210,25%,12%)", marginBottom: 4 }}>{c.val}</div>
+                }
+                {'link' in c
+                  ? <a href={c.link} target={c.link.startsWith('tel:') || c.link.startsWith('mailto:') ? '_self' : '_blank'} rel="noopener noreferrer" style={{ fontSize: 12, color: "#3a9ab5", textDecoration: "underline", cursor: "pointer" }}>{c.sub}</a>
                   : <div style={{ fontSize: 12, color: "hsl(210,15%,40%)" }}>{c.sub}</div>
                 }
               </div>
