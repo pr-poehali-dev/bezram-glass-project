@@ -34,9 +34,9 @@
 
     --radius: 0.25rem;
 
-    --glass-blue: #3a9ab5;
-    --glass-blue-dim: rgba(58, 154, 181, 0.1);
-    --glass-blue-border: rgba(58, 154, 181, 0.3);
+    --glass-blue: #8b1a2f;
+    --glass-blue-dim: rgba(139, 26, 47, 0.1);
+    --glass-blue-border: rgba(139, 26, 47, 0.3);
   }
 }
 
