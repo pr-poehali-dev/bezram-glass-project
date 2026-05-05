@@ -167,7 +167,7 @@ const Index = () => {
       {/* STATS */}
       <div style={{ borderTop: "1px solid hsl(210,15%,14%)", borderBottom: "1px solid hsl(210,15%,14%)", background: "hsl(210,15%,8%)" }}>
         <div className="max-w-6xl mx-auto px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {[["500+","выполненных проектов"],["16 лет","опыта на рынке"],["3 года","гарантия на монтаж"],["48 ч","срок выезда замерщика"]].map(([v, l]) => (
+          {[["500+","выполненных проектов"],["16 лет","опыта на рынке"],["1 год","гарантия на монтаж"],["48 ч","срок выезда замерщика"]].map(([v, l]) => (
             <div key={l} style={{ textAlign: "center" }}>
               <div style={{ fontFamily: "'Cormorant', serif", fontSize: "clamp(22px,3vw,32px)", color: "#4db8d0", fontWeight: 300 }}>{v}</div>
               <div style={{ fontSize: 11, color: "hsl(210,10%,48%)", marginTop: 4, letterSpacing: "0.05em" }}>{l}</div>
