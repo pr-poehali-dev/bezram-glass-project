@@ -380,7 +380,7 @@ const Index = () => {
             {[
               { icon: "Phone", title: "Телефон", val: "+7 (951) 913-80-63", sub: "Пн–Пт: 9:00–19:00" },
               { icon: "MapPin", title: "Адрес", val: "Нижний Новгород, ул. Карла Маркса, 22", sub: "Открыть на картах", link: "https://yandex.ru/maps/?text=Нижний+Новгород+улица+Карла+Маркса+22" },
-              { icon: "Mail", title: "E-mail", val: "info@artglass.ru", sub: "Ответим за 2 часа" },
+              { icon: "Mail", title: "E-mail", val: "rds-nn@mail.ru", sub: "Ответим за 2 часа" },
             ].map((c) => (
               <div key={c.title} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(77,184,208,0.18)", padding: 28 }}>
                 <div style={{ width: 42, height: 42, border: "1px solid rgba(77,184,208,0.3)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
