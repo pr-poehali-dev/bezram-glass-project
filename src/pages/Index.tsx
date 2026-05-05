@@ -420,6 +420,15 @@ const Index = () => {
             <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/>
           </svg>
         </a>
+        {/* Макс */}
+        <a href="https://max.ru/+79519138063" target="_blank" rel="noopener noreferrer"
+          style={{ width: 56, height: 56, borderRadius: "50%", background: "#FF6B00", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 20px rgba(255,107,0,0.4)", cursor: "pointer", transition: "transform 0.2s, box-shadow 0.2s", textDecoration: "none" }}
+          onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.transform = "scale(1.1)"; (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 6px 28px rgba(255,107,0,0.55)"; }}
+          onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.transform = "scale(1)"; (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 4px 20px rgba(255,107,0,0.4)"; }}>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 10H6v-2h12v2zm0-3H6V7h12v2z"/>
+          </svg>
+        </a>
         {/* Telegram */}
         <a href="https://t.me/Ostekleniebezram" target="_blank" rel="noopener noreferrer"
           style={{ width: 56, height: 56, borderRadius: "50%", background: "#229ED9", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 20px rgba(34,158,217,0.4)", cursor: "pointer", transition: "transform 0.2s, box-shadow 0.2s", textDecoration: "none" }}
