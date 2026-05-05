@@ -81,23 +81,23 @@ const Index = () => {
       <header style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 50, transition: "all 0.3s", ...(scrolled ? { background: "rgba(240,244,248,0.97)", backdropFilter: "blur(12px)", borderBottom: "1px solid hsl(210,15%,82%)" } : {}) }}>
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollTo("hero")}>
-            <div style={{ width: 32, height: 32, border: "1px solid #8b1a2f", transform: "rotate(45deg)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <div style={{ width: 10, height: 10, background: "#8b1a2f" }} />
+            <div style={{ width: 32, height: 32, border: "1px solid #e81c2e", transform: "rotate(45deg)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div style={{ width: 10, height: 10, background: "#e81c2e" }} />
             </div>
-            <span style={{ fontFamily: "'Cormorant', serif", fontSize: 30, fontWeight: 900, letterSpacing: "0.2em", textTransform: "uppercase", color: "#8b1a2f" }}>bezram.nn</span>
+            <span style={{ fontFamily: "'Cormorant', serif", fontSize: 30, fontWeight: 900, letterSpacing: "0.2em", textTransform: "uppercase", color: "#e81c2e" }}>bezram.nn</span>
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
             {[["hero","Главная"],["services","Услуги"],["portfolio","Портфолио"],["calc","Расчёт"],["contacts","Контакты"]].map(([id, label]) => (
               <button key={id} onClick={() => scrollTo(id)} style={{ fontSize: 12, letterSpacing: "0.15em", textTransform: "uppercase", fontWeight: 500, color: "hsl(210,15%,40%)", background: "none", border: "none", cursor: "pointer", transition: "color 0.2s" }}
-                onMouseEnter={e => (e.currentTarget.style.color = "#8b1a2f")}
+                onMouseEnter={e => (e.currentTarget.style.color = "#e81c2e")}
                 onMouseLeave={e => (e.currentTarget.style.color = "hsl(210,15%,40%)")}>
                 {label}
               </button>
             ))}
           </nav>
 
-          <button onClick={() => scrollTo("contacts")} className="hidden md:block" style={{ background: "#8b1a2f", color: "hsl(210,20%,96%)", padding: "9px 22px", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", border: "none", cursor: "pointer" }}>
+          <button onClick={() => scrollTo("contacts")} className="hidden md:block" style={{ background: "#e81c2e", color: "hsl(210,20%,96%)", padding: "9px 22px", fontSize: 12, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", border: "none", cursor: "pointer" }}>
             Связаться
           </button>
 
@@ -128,13 +128,13 @@ const Index = () => {
         <div className="relative max-w-6xl mx-auto px-6 w-full" style={{ paddingTop: 120, paddingBottom: 80 }}>
           <div style={{ maxWidth: 620 }}>
             <div className="animate-fade-in flex items-center gap-3 mb-6" style={{ animationDelay: "0.1s", opacity: 0 }}>
-              <div style={{ height: 1, width: 40, background: "#8b1a2f" }} />
-              <span style={{ color: "#8b1a2f", fontSize: 11, letterSpacing: "0.35em", textTransform: "uppercase", fontWeight: 500 }}>Безрамное остекление</span>
+              <div style={{ height: 1, width: 40, background: "#e81c2e" }} />
+              <span style={{ color: "#e81c2e", fontSize: 11, letterSpacing: "0.35em", textTransform: "uppercase", fontWeight: 500 }}>Безрамное остекление</span>
             </div>
 
             <h1 className="animate-fade-up" style={{ fontFamily: "'Cormorant', serif", fontSize: "clamp(42px,7vw,76px)", fontWeight: 300, lineHeight: 1.1, marginBottom: 24, animationDelay: "0.2s", opacity: 0 }}>
               Ваш дом без<br />
-              <em style={{ color: "#8b1a2f", fontStyle: "normal" }}>границ и рамок</em>
+              <em style={{ color: "#e81c2e", fontStyle: "normal" }}>границ и рамок</em>
             </h1>
 
             <p className="animate-fade-up" style={{ color: "hsl(210,10%,58%)", fontSize: 17, lineHeight: 1.7, marginBottom: 36, maxWidth: 500, animationDelay: "0.35s", opacity: 0 }}>
@@ -142,11 +142,11 @@ const Index = () => {
             </p>
 
             <div className="animate-fade-up flex flex-wrap gap-4" style={{ animationDelay: "0.5s", opacity: 0 }}>
-              <button onClick={() => scrollTo("calc")} style={{ background: "#8b1a2f", color: "hsl(210,20%,96%)", padding: "13px 32px", fontWeight: 700, fontSize: 13, letterSpacing: "0.15em", textTransform: "uppercase", border: "none", cursor: "pointer" }}>
+              <button onClick={() => scrollTo("calc")} style={{ background: "#e81c2e", color: "hsl(210,20%,96%)", padding: "13px 32px", fontWeight: 700, fontSize: 13, letterSpacing: "0.15em", textTransform: "uppercase", border: "none", cursor: "pointer" }}>
                 Рассчитать стоимость
               </button>
               <button onClick={() => scrollTo("portfolio")} style={{ background: "transparent", color: "hsl(210,20%,85%)", padding: "13px 32px", fontWeight: 500, fontSize: 13, letterSpacing: "0.15em", textTransform: "uppercase", border: "1px solid rgba(58,154,181,0.3)", cursor: "pointer" }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = "#8b1a2f"; e.currentTarget.style.color = "#8b1a2f"; }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = "#e81c2e"; e.currentTarget.style.color = "#e81c2e"; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(58,154,181,0.3)"; e.currentTarget.style.color = "hsl(210,20%,85%)"; }}>
                 Смотреть работы
               </button>
@@ -156,7 +156,7 @@ const Index = () => {
           <div className="hidden lg:flex flex-col gap-6" style={{ position: "absolute", bottom: 80, right: 24 }}>
             {[["500+","Проектов"],["16","Лет опыта"],["100%","Гарантия"]].map(([num, label]) => (
               <div key={label} style={{ textAlign: "right" }}>
-                <div style={{ fontFamily: "'Cormorant', serif", fontSize: 34, color: "#8b1a2f", fontWeight: 300, lineHeight: 1 }}>{num}</div>
+                <div style={{ fontFamily: "'Cormorant', serif", fontSize: 34, color: "#e81c2e", fontWeight: 300, lineHeight: 1 }}>{num}</div>
                 <div style={{ fontSize: 11, color: "hsl(210,10%,45%)", letterSpacing: "0.25em", textTransform: "uppercase", marginTop: 4 }}>{label}</div>
               </div>
             ))}
@@ -173,7 +173,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[["500+","выполненных проектов"],["16 лет","опыта на рынке"],["от 1 года","гарантия на монтаж"],["48 ч","срок выезда замерщика"]].map(([v, l]) => (
             <div key={l} style={{ textAlign: "center" }}>
-              <div style={{ fontFamily: "'Cormorant', serif", fontSize: "clamp(22px,3vw,32px)", color: "#8b1a2f", fontWeight: 300 }}>{v}</div>
+              <div style={{ fontFamily: "'Cormorant', serif", fontSize: "clamp(22px,3vw,32px)", color: "#e81c2e", fontWeight: 300 }}>{v}</div>
               <div style={{ fontSize: 11, color: "hsl(210,15%,40%)", marginTop: 4, letterSpacing: "0.05em" }}>{l}</div>
             </div>
           ))}
@@ -184,8 +184,8 @@ const Index = () => {
       <section id="services" className="py-24 max-w-6xl mx-auto px-6">
         <div style={{ marginBottom: 52 }}>
           <div className="flex items-center gap-3" style={{ marginBottom: 14 }}>
-            <div style={{ height: 1, width: 40, background: "#8b1a2f" }} />
-            <span style={{ color: "#8b1a2f", fontSize: 11, letterSpacing: "0.35em", textTransform: "uppercase" }}>Наши услуги</span>
+            <div style={{ height: 1, width: 40, background: "#e81c2e" }} />
+            <span style={{ color: "#e81c2e", fontSize: 11, letterSpacing: "0.35em", textTransform: "uppercase" }}>Наши услуги</span>
           </div>
           <h2 style={{ fontFamily: "'Cormorant', serif", fontSize: "clamp(32px,5vw,52px)", fontWeight: 300 }}>Что мы делаем</h2>
         </div>
@@ -196,11 +196,11 @@ const Index = () => {
               onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,154,181,0.55)"; }}
               onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,154,181,0.25)"; }}>
               <div style={{ width: 48, height: 48, border: "1px solid rgba(58,154,181,0.3)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 20 }}>
-                <Icon name={s.icon} fallback="Square" size={20} style={{ color: "#8b1a2f" }} />
+                <Icon name={s.icon} fallback="Square" size={20} style={{ color: "#e81c2e" }} />
               </div>
               <h3 style={{ fontFamily: "'Cormorant', serif", fontSize: 24, fontWeight: 300, marginBottom: 10 }}>{s.title}</h3>
               <p style={{ color: "hsl(210,15%,40%)", fontSize: 14, lineHeight: 1.7, marginBottom: 14 }}>{s.desc}</p>
-              <div style={{ color: "#8b1a2f", fontSize: 13, fontWeight: 600, letterSpacing: "0.05em" }}>{s.price}</div>
+              <div style={{ color: "#e81c2e", fontSize: 13, fontWeight: 600, letterSpacing: "0.05em" }}>{s.price}</div>
             </div>
           ))}
         </div>
@@ -211,14 +211,14 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div style={{ marginBottom: 36 }}>
             <div className="flex items-center gap-3" style={{ marginBottom: 14 }}>
-              <div style={{ height: 1, width: 40, background: "#8b1a2f" }} />
-              <span style={{ color: "#8b1a2f", fontSize: 11, letterSpacing: "0.35em", textTransform: "uppercase" }}>Наши работы</span>
+              <div style={{ height: 1, width: 40, background: "#e81c2e" }} />
+              <span style={{ color: "#e81c2e", fontSize: 11, letterSpacing: "0.35em", textTransform: "uppercase" }}>Наши работы</span>
             </div>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-5">
               <h2 style={{ fontFamily: "'Cormorant', serif", fontSize: "clamp(32px,5vw,52px)", fontWeight: 300 }}>Портфолио</h2>
               <div className="flex gap-2 flex-wrap">
                 {TAGS.map((tag) => (
-                  <button key={tag} onClick={() => setActiveTag(tag)} style={{ padding: "6px 16px", fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 500, border: `1px solid ${activeTag === tag ? "#8b1a2f" : "hsl(210,15%,20%)"}`, background: activeTag === tag ? "#8b1a2f" : "transparent", color: activeTag === tag ? "hsl(210,20%,96%)" : "hsl(210,15%,40%)", cursor: "pointer", transition: "all 0.2s" }}>
+                  <button key={tag} onClick={() => setActiveTag(tag)} style={{ padding: "6px 16px", fontSize: 11, letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 500, border: `1px solid ${activeTag === tag ? "#e81c2e" : "hsl(210,15%,20%)"}`, background: activeTag === tag ? "#e81c2e" : "transparent", color: activeTag === tag ? "hsl(210,20%,96%)" : "hsl(210,15%,40%)", cursor: "pointer", transition: "all 0.2s" }}>
                     {tag}
                   </button>
                 ))}
@@ -236,11 +236,11 @@ const Index = () => {
                 <div className="portfolio-overlay" style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(12,16,22,0.95) 0%, rgba(12,16,22,0.1) 60%, transparent)", opacity: 0, transition: "opacity 0.3s", display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: 20 }}
                   onMouseEnter={e => (e.currentTarget.style.opacity = "1")}
                   onMouseLeave={e => (e.currentTarget.style.opacity = "0")}>
-                  <div style={{ color: "#8b1a2f", fontSize: 11, letterSpacing: "0.25em", textTransform: "uppercase", marginBottom: 4 }}>{item.tag}</div>
+                  <div style={{ color: "#e81c2e", fontSize: 11, letterSpacing: "0.25em", textTransform: "uppercase", marginBottom: 4 }}>{item.tag}</div>
                   <div style={{ fontFamily: "'Cormorant', serif", fontSize: 18, fontWeight: 300, color: "#fff" }}>{item.title}</div>
                   <div style={{ color: "hsl(210,10%,58%)", fontSize: 12, marginTop: 4 }}>{item.area} · {item.year}</div>
                 </div>
-                <div style={{ position: "absolute", top: 12, right: 12, width: 32, height: 32, background: "#8b1a2f", display: "flex", alignItems: "center", justifyContent: "center", opacity: 0, transition: "opacity 0.3s" }}>
+                <div style={{ position: "absolute", top: 12, right: 12, width: 32, height: 32, background: "#e81c2e", display: "flex", alignItems: "center", justifyContent: "center", opacity: 0, transition: "opacity 0.3s" }}>
                   <Icon name="Expand" size={14} style={{ color: "hsl(210,15%,6%)" }} />
                 </div>
               </div>
@@ -258,7 +258,7 @@ const Index = () => {
               <img src={item.img} alt={item.title} style={{ width: "100%", maxHeight: "72vh", objectFit: "contain" }} />
               <div style={{ marginTop: 16, display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
                 <div>
-                  <div style={{ color: "#8b1a2f", fontSize: 11, letterSpacing: "0.3em", textTransform: "uppercase", marginBottom: 4 }}>{item.tag}</div>
+                  <div style={{ color: "#e81c2e", fontSize: 11, letterSpacing: "0.3em", textTransform: "uppercase", marginBottom: 4 }}>{item.tag}</div>
                   <div style={{ fontFamily: "'Cormorant', serif", fontSize: 24, fontWeight: 300, color: "hsl(210,20%,92%)" }}>{item.title}</div>
                   <div style={{ color: "hsl(210,10%,50%)", fontSize: 13, marginTop: 4 }}>{item.area} · {item.year}</div>
                 </div>
@@ -285,8 +285,8 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div style={{ marginBottom: 52 }}>
             <div className="flex items-center gap-3" style={{ marginBottom: 14 }}>
-              <div style={{ height: 1, width: 40, background: "#8b1a2f" }} />
-              <span style={{ color: "#8b1a2f", fontSize: 11, letterSpacing: "0.35em", textTransform: "uppercase" }}>Онлайн-расчёт</span>
+              <div style={{ height: 1, width: 40, background: "#e81c2e" }} />
+              <span style={{ color: "#e81c2e", fontSize: 11, letterSpacing: "0.35em", textTransform: "uppercase" }}>Онлайн-расчёт</span>
             </div>
             <h2 style={{ fontFamily: "'Cormorant', serif", fontSize: "clamp(32px,5vw,52px)", fontWeight: 300 }}>Рассчитайте стоимость</h2>
           </div>
@@ -299,7 +299,7 @@ const Index = () => {
                     <label style={{ fontSize: 11, letterSpacing: "0.25em", textTransform: "uppercase", color: "hsl(210,10%,52%)", display: "block", marginBottom: 12 }}>Тип объекта</label>
                     <div className="grid grid-cols-2 gap-2">
                       {["Беседки","Дома","Балконы","Коммерция"].map((t) => (
-                        <button key={t} onClick={() => setForm({ ...form, type: t })} style={{ padding: "10px 8px", fontSize: 13, border: `1px solid ${form.type === t ? "#8b1a2f" : "hsl(210,15%,78%)"}`, background: form.type === t ? "rgba(139,26,47,0.08)" : "transparent", color: form.type === t ? "#8b1a2f" : "hsl(210,15%,40%)", cursor: "pointer", letterSpacing: "0.05em", transition: "all 0.2s" }}>
+                        <button key={t} onClick={() => setForm({ ...form, type: t })} style={{ padding: "10px 8px", fontSize: 13, border: `1px solid ${form.type === t ? "#e81c2e" : "hsl(210,15%,78%)"}`, background: form.type === t ? "rgba(232,28,46,0.08)" : "transparent", color: form.type === t ? "#e81c2e" : "hsl(210,15%,40%)", cursor: "pointer", letterSpacing: "0.05em", transition: "all 0.2s" }}>
                           {t}
                         </button>
                       ))}
@@ -308,12 +308,12 @@ const Index = () => {
 
                   <div>
                     <label style={{ fontSize: 11, letterSpacing: "0.25em", textTransform: "uppercase", color: "hsl(210,10%,52%)", display: "block", marginBottom: 10 }}>Площадь остекления (м²)</label>
-                    <input type="number" placeholder="Например: 24" value={form.area} onChange={(e) => setForm({ ...form, area: e.target.value })} style={{ width: "100%", background: "hsl(210,20%,98%)", border: "1px solid hsl(210,15%,78%)", outline: "none", padding: "12px 16px", color: "hsl(210,25%,12%)", fontSize: 15, boxSizing: "border-box" }} onFocus={e => (e.currentTarget.style.borderColor = "#8b1a2f")} onBlur={e => (e.currentTarget.style.borderColor = "hsl(210,15%,78%)")} />
+                    <input type="number" placeholder="Например: 24" value={form.area} onChange={(e) => setForm({ ...form, area: e.target.value })} style={{ width: "100%", background: "hsl(210,20%,98%)", border: "1px solid hsl(210,15%,78%)", outline: "none", padding: "12px 16px", color: "hsl(210,25%,12%)", fontSize: 15, boxSizing: "border-box" }} onFocus={e => (e.currentTarget.style.borderColor = "#e81c2e")} onBlur={e => (e.currentTarget.style.borderColor = "hsl(210,15%,78%)")} />
                   </div>
 
                   {cost && (
                     <div style={{ border: "1px solid rgba(58,154,181,0.3)", background: "rgba(58,154,181,0.07)", padding: 20 }}>
-                      <div style={{ fontSize: 11, letterSpacing: "0.25em", textTransform: "uppercase", color: "#8b1a2f", marginBottom: 8 }}>Предварительная стоимость</div>
+                      <div style={{ fontSize: 11, letterSpacing: "0.25em", textTransform: "uppercase", color: "#e81c2e", marginBottom: 8 }}>Предварительная стоимость</div>
                       <div style={{ fontFamily: "'Cormorant', serif", fontSize: 32, fontWeight: 300 }}>{cost.min} — {cost.max} ₽</div>
                       <div style={{ fontSize: 12, color: "hsl(210,15%,40%)", marginTop: 6 }}>Точная цена — после бесплатного замера</div>
                     </div>
@@ -322,21 +322,21 @@ const Index = () => {
                   <div style={{ borderTop: "1px solid hsl(210,15%,82%)", paddingTop: 20, display: "flex", flexDirection: "column", gap: 14 }}>
                     <div>
                       <label style={{ fontSize: 11, letterSpacing: "0.25em", textTransform: "uppercase", color: "hsl(210,10%,52%)", display: "block", marginBottom: 8 }}>Ваше имя</label>
-                      <input type="text" placeholder="Имя" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} style={{ width: "100%", background: "hsl(210,20%,98%)", border: "1px solid hsl(210,15%,78%)", outline: "none", padding: "12px 16px", color: "hsl(210,25%,12%)", fontSize: 15, boxSizing: "border-box" }} onFocus={e => (e.currentTarget.style.borderColor = "#8b1a2f")} onBlur={e => (e.currentTarget.style.borderColor = "hsl(210,15%,78%)")} />
+                      <input type="text" placeholder="Имя" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} style={{ width: "100%", background: "hsl(210,20%,98%)", border: "1px solid hsl(210,15%,78%)", outline: "none", padding: "12px 16px", color: "hsl(210,25%,12%)", fontSize: 15, boxSizing: "border-box" }} onFocus={e => (e.currentTarget.style.borderColor = "#e81c2e")} onBlur={e => (e.currentTarget.style.borderColor = "hsl(210,15%,78%)")} />
                     </div>
                     <div>
                       <label style={{ fontSize: 11, letterSpacing: "0.25em", textTransform: "uppercase", color: "hsl(210,10%,52%)", display: "block", marginBottom: 8 }}>Телефон</label>
-                      <input type="tel" placeholder="+7 (___) ___-__-__" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} style={{ width: "100%", background: "hsl(210,20%,98%)", border: "1px solid hsl(210,15%,78%)", outline: "none", padding: "12px 16px", color: "hsl(210,25%,12%)", fontSize: 15, boxSizing: "border-box" }} onFocus={e => (e.currentTarget.style.borderColor = "#8b1a2f")} onBlur={e => (e.currentTarget.style.borderColor = "hsl(210,15%,78%)")} />
+                      <input type="tel" placeholder="+7 (___) ___-__-__" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} style={{ width: "100%", background: "hsl(210,20%,98%)", border: "1px solid hsl(210,15%,78%)", outline: "none", padding: "12px 16px", color: "hsl(210,25%,12%)", fontSize: 15, boxSizing: "border-box" }} onFocus={e => (e.currentTarget.style.borderColor = "#e81c2e")} onBlur={e => (e.currentTarget.style.borderColor = "hsl(210,15%,78%)")} />
                     </div>
-                    <button onClick={() => { if (form.name && form.phone) setSubmitted(true); }} disabled={!form.name || !form.phone} style={{ width: "100%", background: form.name && form.phone ? "#8b1a2f" : "rgba(139,26,47,0.3)", color: "hsl(210,20%,96%)", padding: "14px", fontWeight: 700, fontSize: 13, letterSpacing: "0.15em", textTransform: "uppercase", border: "none", cursor: form.name && form.phone ? "pointer" : "not-allowed", transition: "opacity 0.2s" }}>
+                    <button onClick={() => { if (form.name && form.phone) setSubmitted(true); }} disabled={!form.name || !form.phone} style={{ width: "100%", background: form.name && form.phone ? "#e81c2e" : "rgba(232,28,46,0.3)", color: "hsl(210,20%,96%)", padding: "14px", fontWeight: 700, fontSize: 13, letterSpacing: "0.15em", textTransform: "uppercase", border: "none", cursor: form.name && form.phone ? "pointer" : "not-allowed", transition: "opacity 0.2s" }}>
                       Получить точный расчёт
                     </button>
                   </div>
                 </div>
               ) : (
                 <div style={{ textAlign: "center", padding: "40px 0" }}>
-                  <div style={{ width: 64, height: 64, border: "1px solid #8b1a2f", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 24px" }}>
-                    <Icon name="Check" size={28} style={{ color: "#8b1a2f" }} />
+                  <div style={{ width: 64, height: 64, border: "1px solid #e81c2e", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 24px" }}>
+                    <Icon name="Check" size={28} style={{ color: "#e81c2e" }} />
                   </div>
                   <h3 style={{ fontFamily: "'Cormorant', serif", fontSize: 26, fontWeight: 300, marginBottom: 12 }}>Заявка принята!</h3>
                   <p style={{ color: "hsl(210,10%,52%)", fontSize: 14, lineHeight: 1.7 }}>Наш менеджер свяжется с вами в течение 30 минут и согласует удобное время для бесплатного замера.</p>
@@ -353,7 +353,7 @@ const Index = () => {
                 { n: "04", title: "Монтаж и сдача", desc: "Профессиональный монтаж за 1–3 дня. Принимаете работу и получаете гарантийный паспорт." },
               ].map((step) => (
                 <div key={step.n} style={{ display: "flex", gap: 20 }}>
-                  <div style={{ fontFamily: "'Cormorant', serif", fontSize: 40, color: "#8b1a2f", opacity: 0.38, fontWeight: 300, lineHeight: 1, flexShrink: 0, width: 44 }}>{step.n}</div>
+                  <div style={{ fontFamily: "'Cormorant', serif", fontSize: 40, color: "#e81c2e", opacity: 0.38, fontWeight: 300, lineHeight: 1, flexShrink: 0, width: 44 }}>{step.n}</div>
                   <div>
                     <div style={{ fontWeight: 600, fontSize: 14, letterSpacing: "0.05em", marginBottom: 4, color: "hsl(210,25%,15%)" }}>{step.title}</div>
                     <div style={{ color: "hsl(210,15%,40%)", fontSize: 14, lineHeight: 1.7 }}>{step.desc}</div>
@@ -370,8 +370,8 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div style={{ marginBottom: 48 }}>
             <div className="flex items-center gap-3" style={{ marginBottom: 14 }}>
-              <div style={{ height: 1, width: 40, background: "#8b1a2f" }} />
-              <span style={{ color: "#8b1a2f", fontSize: 11, letterSpacing: "0.35em", textTransform: "uppercase" }}>Контакты</span>
+              <div style={{ height: 1, width: 40, background: "#e81c2e" }} />
+              <span style={{ color: "#e81c2e", fontSize: 11, letterSpacing: "0.35em", textTransform: "uppercase" }}>Контакты</span>
             </div>
             <h2 style={{ fontFamily: "'Cormorant', serif", fontSize: "clamp(32px,5vw,52px)", fontWeight: 300 }}>Свяжитесь с нами</h2>
           </div>
@@ -385,7 +385,7 @@ const Index = () => {
             ].map((c) => (
               <div key={c.title} style={{ background: "rgba(255,255,255,0.9)", border: "1px solid rgba(58,154,181,0.25)", padding: 28 }}>
                 <div style={{ width: 42, height: 42, border: "1px solid rgba(58,154,181,0.3)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
-                  <Icon name={c.icon} fallback="Square" size={18} style={{ color: "#8b1a2f" }} />
+                  <Icon name={c.icon} fallback="Square" size={18} style={{ color: "#e81c2e" }} />
                 </div>
                 <div style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: "hsl(210,15%,40%)", marginBottom: 8 }}>{c.title}</div>
                 {'link' in c
@@ -393,7 +393,7 @@ const Index = () => {
                   : <div style={{ fontWeight: 600, color: "hsl(210,25%,12%)", marginBottom: 4 }}>{c.val}</div>
                 }
                 {'link' in c
-                  ? <a href={c.link} target={c.link.startsWith('tel:') || c.link.startsWith('mailto:') ? '_self' : '_blank'} rel="noopener noreferrer" style={{ fontSize: 12, color: "#8b1a2f", textDecoration: "underline", cursor: "pointer" }}>{c.sub}</a>
+                  ? <a href={c.link} target={c.link.startsWith('tel:') || c.link.startsWith('mailto:') ? '_self' : '_blank'} rel="noopener noreferrer" style={{ fontSize: 12, color: "#e81c2e", textDecoration: "underline", cursor: "pointer" }}>{c.sub}</a>
                   : <div style={{ fontSize: 12, color: "hsl(210,15%,40%)" }}>{c.sub}</div>
                 }
               </div>
@@ -405,7 +405,7 @@ const Index = () => {
               <h3 style={{ fontFamily: "'Cormorant', serif", fontSize: "clamp(22px,3.5vw,32px)", fontWeight: 300, marginBottom: 8 }}>Бесплатный замер — уже сегодня</h3>
               <p style={{ color: "hsl(210,15%,40%)", fontSize: 14 }}>Оставьте заявку и мы перезвоним в течение 30 минут</p>
             </div>
-            <button onClick={() => scrollTo("calc")} style={{ flexShrink: 0, background: "#8b1a2f", color: "hsl(210,20%,96%)", padding: "13px 32px", fontWeight: 700, fontSize: 13, letterSpacing: "0.15em", textTransform: "uppercase", border: "none", cursor: "pointer", whiteSpace: "nowrap" }}>
+            <button onClick={() => scrollTo("calc")} style={{ flexShrink: 0, background: "#e81c2e", color: "hsl(210,20%,96%)", padding: "13px 32px", fontWeight: 700, fontSize: 13, letterSpacing: "0.15em", textTransform: "uppercase", border: "none", cursor: "pointer", whiteSpace: "nowrap" }}>
               Заказать замер
             </button>
           </div>
@@ -416,9 +416,9 @@ const Index = () => {
       <div style={{ position: "fixed", bottom: 28, right: 28, zIndex: 99, display: "flex", flexDirection: "column", gap: 12 }}>
         {/* Звонок */}
         <a href="tel:+79519138063"
-          style={{ width: 56, height: 56, borderRadius: "50%", background: "#8b1a2f", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 20px rgba(139,26,47,0.4)", cursor: "pointer", transition: "transform 0.2s, box-shadow 0.2s", textDecoration: "none" }}
-          onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.transform = "scale(1.1)"; (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 6px 28px rgba(139,26,47,0.55)"; }}
-          onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.transform = "scale(1)"; (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 4px 20px rgba(139,26,47,0.4)"; }}>
+          style={{ width: 56, height: 56, borderRadius: "50%", background: "#e81c2e", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 20px rgba(232,28,46,0.4)", cursor: "pointer", transition: "transform 0.2s, box-shadow 0.2s", textDecoration: "none" }}
+          onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.transform = "scale(1.1)"; (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 6px 28px rgba(232,28,46,0.55)"; }}
+          onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.transform = "scale(1)"; (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 4px 20px rgba(232,28,46,0.4)"; }}>
           <svg width="26" height="26" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.58 1 1 0 01-.25 1.01l-2.2 2.2z"/>
           </svg>
@@ -447,16 +447,16 @@ const Index = () => {
       <footer style={{ borderTop: "1px solid hsl(210,15%,82%)", padding: "28px 24px" }}>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div style={{ width: 24, height: 24, border: "1px solid #8b1a2f", transform: "rotate(45deg)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <div style={{ width: 8, height: 8, background: "#8b1a2f" }} />
+            <div style={{ width: 24, height: 24, border: "1px solid #e81c2e", transform: "rotate(45deg)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div style={{ width: 8, height: 8, background: "#e81c2e" }} />
             </div>
-            <span style={{ fontFamily: "'Cormorant', serif", fontSize: 18, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "#8b1a2f" }}>bezram.nn</span>
+            <span style={{ fontFamily: "'Cormorant', serif", fontSize: 18, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "#e81c2e" }}>bezram.nn</span>
           </div>
           <div style={{ fontSize: 12, color: "hsl(210,15%,40%)", letterSpacing: "0.05em" }}>© 2024 bezram.nn. Безрамное остекление</div>
           <div className="flex gap-6">
             {[["Услуги","services"],["Портфолио","portfolio"],["Контакты","contacts"]].map(([l, id]) => (
               <button key={id} onClick={() => scrollTo(id)} style={{ fontSize: 11, color: "hsl(210,15%,40%)", background: "none", border: "none", cursor: "pointer", letterSpacing: "0.15em", textTransform: "uppercase", transition: "color 0.2s" }}
-                onMouseEnter={e => (e.currentTarget.style.color = "#8b1a2f")}
+                onMouseEnter={e => (e.currentTarget.style.color = "#e81c2e")}
                 onMouseLeave={e => (e.currentTarget.style.color = "hsl(210,15%,40%)")}>
                 {l}
               </button>
