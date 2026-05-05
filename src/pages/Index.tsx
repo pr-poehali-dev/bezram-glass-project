@@ -378,7 +378,7 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5" style={{ marginBottom: 40 }}>
             {[
-              { icon: "Phone", title: "Телефон", val: "+7 (495) 000-00-00", sub: "Пн–Пт: 9:00–19:00" },
+              { icon: "Phone", title: "Телефон", val: "+7 (951) 913-80-63", sub: "Пн–Пт: 9:00–19:00" },
               { icon: "MapPin", title: "Адрес", val: "Москва, ул. Примерная, 1", sub: "Шоурум — по записи" },
               { icon: "Mail", title: "E-mail", val: "info@artglass.ru", sub: "Ответим за 2 часа" },
             ].map((c) => (
