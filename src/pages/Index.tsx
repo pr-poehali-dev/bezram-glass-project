@@ -150,7 +150,7 @@ const Index = () => {
           </div>
 
           <div className="hidden lg:flex flex-col gap-6" style={{ position: "absolute", bottom: 80, right: 24 }}>
-            {[["500+","Проектов"],["12","Лет опыта"],["100%","Гарантия"]].map(([num, label]) => (
+            {[["500+","Проектов"],["16","Лет опыта"],["100%","Гарантия"]].map(([num, label]) => (
               <div key={label} style={{ textAlign: "right" }}>
                 <div style={{ fontFamily: "'Cormorant', serif", fontSize: 34, color: "#4db8d0", fontWeight: 300, lineHeight: 1 }}>{num}</div>
                 <div style={{ fontSize: 11, color: "hsl(210,10%,45%)", letterSpacing: "0.25em", textTransform: "uppercase", marginTop: 4 }}>{label}</div>
@@ -167,7 +167,7 @@ const Index = () => {
       {/* STATS */}
       <div style={{ borderTop: "1px solid hsl(210,15%,14%)", borderBottom: "1px solid hsl(210,15%,14%)", background: "hsl(210,15%,8%)" }}>
         <div className="max-w-6xl mx-auto px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {[["500+","выполненных проектов"],["12 лет","опыта на рынке"],["3 года","гарантия на монтаж"],["48 ч","срок выезда замерщика"]].map(([v, l]) => (
+          {[["500+","выполненных проектов"],["16 лет","опыта на рынке"],["3 года","гарантия на монтаж"],["48 ч","срок выезда замерщика"]].map(([v, l]) => (
             <div key={l} style={{ textAlign: "center" }}>
               <div style={{ fontFamily: "'Cormorant', serif", fontSize: "clamp(22px,3vw,32px)", color: "#4db8d0", fontWeight: 300 }}>{v}</div>
               <div style={{ fontSize: 11, color: "hsl(210,10%,48%)", marginTop: 4, letterSpacing: "0.05em" }}>{l}</div>
