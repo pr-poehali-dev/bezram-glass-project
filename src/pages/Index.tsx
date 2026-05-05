@@ -80,7 +80,7 @@ const Index = () => {
             <div style={{ width: 32, height: 32, border: "1px solid #4db8d0", transform: "rotate(45deg)", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <div style={{ width: 10, height: 10, background: "#4db8d0" }} />
             </div>
-            <span style={{ fontFamily: "'Cormorant', serif", fontSize: 20, fontWeight: 300, letterSpacing: "0.2em", textTransform: "uppercase" }}>АртГласс</span>
+            <span style={{ fontFamily: "'Cormorant', serif", fontSize: 20, fontWeight: 300, letterSpacing: "0.2em", textTransform: "uppercase" }}>bezram.nn</span>
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -408,9 +408,9 @@ const Index = () => {
             <div style={{ width: 24, height: 24, border: "1px solid #4db8d0", transform: "rotate(45deg)", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <div style={{ width: 8, height: 8, background: "#4db8d0" }} />
             </div>
-            <span style={{ fontFamily: "'Cormorant', serif", fontSize: 18, fontWeight: 300, letterSpacing: "0.2em", textTransform: "uppercase" }}>АртГласс</span>
+            <span style={{ fontFamily: "'Cormorant', serif", fontSize: 18, fontWeight: 300, letterSpacing: "0.2em", textTransform: "uppercase" }}>bezram.nn</span>
           </div>
-          <div style={{ fontSize: 12, color: "hsl(210,10%,38%)", letterSpacing: "0.05em" }}>© 2024 АртГласс. Безрамное остекление</div>
+          <div style={{ fontSize: 12, color: "hsl(210,10%,38%)", letterSpacing: "0.05em" }}>© 2024 bezram.nn. Безрамное остекление</div>
           <div className="flex gap-6">
             {[["Услуги","services"],["Портфолио","portfolio"],["Контакты","contacts"]].map(([l, id]) => (
               <button key={id} onClick={() => scrollTo(id)} style={{ fontSize: 11, color: "hsl(210,10%,38%)", background: "none", border: "none", cursor: "pointer", letterSpacing: "0.15em", textTransform: "uppercase", transition: "color 0.2s" }}
