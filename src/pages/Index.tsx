@@ -379,7 +379,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5" style={{ marginBottom: 40 }}>
             {[
               { icon: "Phone", title: "Телефон", val: "+7 (951) 913-80-63", sub: "Пн–Пт: 9:00–19:00" },
-              { icon: "MapPin", title: "Адрес", val: "Москва, ул. Примерная, 1", sub: "Шоурум — по записи" },
+              { icon: "MapPin", title: "Адрес", val: "Нижний Новгород, ул. Карла Маркса, 22", sub: "Открыть на картах", link: "https://yandex.ru/maps/?text=Нижний+Новгород+улица+Карла+Маркса+22" },
               { icon: "Mail", title: "E-mail", val: "info@artglass.ru", sub: "Ответим за 2 часа" },
             ].map((c) => (
               <div key={c.title} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(77,184,208,0.18)", padding: 28 }}>
@@ -388,7 +388,10 @@ const Index = () => {
                 </div>
                 <div style={{ fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", color: "hsl(210,10%,48%)", marginBottom: 8 }}>{c.title}</div>
                 <div style={{ fontWeight: 600, color: "hsl(210,20%,88%)", marginBottom: 4 }}>{c.val}</div>
-                <div style={{ fontSize: 12, color: "hsl(210,10%,44%)" }}>{c.sub}</div>
+                {'link' in c
+                  ? <a href={c.link} target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, color: "#4db8d0", textDecoration: "underline", cursor: "pointer" }}>{c.sub}</a>
+                  : <div style={{ fontSize: 12, color: "hsl(210,10%,44%)" }}>{c.sub}</div>
+                }
               </div>
             ))}
           </div>
